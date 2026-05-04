@@ -1,0 +1,1085 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>みちしるべ ｜ 家族の幸せ応援トークライブ 2026.11.28</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;700;900&family=Noto+Sans+JP:wght@300;400;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --white: #ffffff;
+    --cream: #fdf8f2;
+    --beige: #f5ede0;
+    --warm-beige: #ede0cc;
+    --orange: #e8762a;
+    --orange-light: #f4a04a;
+    --orange-pale: #fde8d4;
+    --red: #c0392b;
+    --brown: #7a4b2a;
+    --dark: #2c1a0e;
+    --text: #3d2b1a;
+    --text-light: #7a6552;
+    --gold: #c8952a;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    font-family: 'Noto Sans JP', sans-serif;
+    background: var(--cream);
+    color: var(--text);
+    line-height: 1.7;
+    overflow-x: hidden;
+  }
+
+  /* ===== FIRST VIEW ===== */
+  .fv {
+    position: relative;
+    min-height: 100vh;
+    background: linear-gradient(160deg, #2c1a0e 0%, #5a2e0c 40%, #7a4b2a 70%, #c8762a 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 80px 24px 60px;
+    overflow: hidden;
+  }
+
+  .fv::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(ellipse at 30% 60%, rgba(232,118,42,0.25) 0%, transparent 60%),
+                radial-gradient(ellipse at 80% 20%, rgba(200,149,42,0.2) 0%, transparent 50%);
+  }
+
+  .fv-badge {
+    display: inline-block;
+    background: var(--orange);
+    color: #fff;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.15em;
+    padding: 6px 20px;
+    border-radius: 20px;
+    margin-bottom: 32px;
+    position: relative;
+    animation: fadeDown 0.8s ease both;
+  }
+
+  .fv-catch {
+    font-family: 'Noto Serif JP', serif;
+    font-size: clamp(28px, 7vw, 52px);
+    font-weight: 900;
+    color: #fff;
+    line-height: 1.4;
+    margin-bottom: 12px;
+    position: relative;
+    animation: fadeDown 0.9s 0.1s ease both;
+  }
+
+  .fv-catch span {
+    color: var(--orange-light);
+    border-bottom: 3px solid var(--orange-light);
+  }
+
+  .fv-sub {
+    font-size: clamp(13px, 3vw, 17px);
+    color: rgba(255,255,255,0.85);
+    margin-bottom: 40px;
+    line-height: 2;
+    position: relative;
+    animation: fadeDown 1s 0.2s ease both;
+  }
+
+  .fv-event-title {
+    font-family: 'Noto Serif JP', serif;
+    font-size: clamp(18px, 4vw, 28px);
+    color: var(--gold);
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    margin-bottom: 8px;
+    position: relative;
+    animation: fadeDown 1s 0.3s ease both;
+  }
+
+  .fv-date {
+    font-family: 'Noto Serif JP', serif;
+    font-size: clamp(32px, 8vw, 60px);
+    font-weight: 900;
+    color: #fff;
+    letter-spacing: 0.03em;
+    margin-bottom: 6px;
+    position: relative;
+    animation: fadeDown 1s 0.35s ease both;
+  }
+
+  .fv-venue {
+    font-size: 14px;
+    color: rgba(255,255,255,0.75);
+    margin-bottom: 40px;
+    animation: fadeDown 1s 0.4s ease both;
+    position: relative;
+  }
+
+  .cta-btn {
+    display: inline-block;
+    background: var(--red);
+    color: #fff;
+    font-size: 17px;
+    font-weight: 700;
+    padding: 18px 48px;
+    border-radius: 50px;
+    text-decoration: none;
+    letter-spacing: 0.05em;
+    box-shadow: 0 8px 30px rgba(192,57,43,0.5);
+    position: relative;
+    animation: fadeDown 1s 0.5s ease both;
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  .cta-btn:hover { transform: translateY(-3px); box-shadow: 0 12px 40px rgba(192,57,43,0.6); }
+
+  .cta-note {
+    font-size: 12px;
+    color: rgba(255,255,255,0.6);
+    margin-top: 12px;
+    animation: fadeDown 1s 0.6s ease both;
+    position: relative;
+  }
+
+  .fv-wave {
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    right: 0;
+  }
+
+  /* ===== EMPATHY ===== */
+  .section {
+    padding: 72px 24px;
+  }
+
+  .section-inner {
+    max-width: 680px;
+    margin: 0 auto;
+  }
+
+  .section-label {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.25em;
+    color: var(--orange);
+    text-align: center;
+    margin-bottom: 12px;
+    text-transform: uppercase;
+  }
+
+  .section-title {
+    font-family: 'Noto Serif JP', serif;
+    font-size: clamp(22px, 5vw, 34px);
+    font-weight: 900;
+    text-align: center;
+    line-height: 1.5;
+    color: var(--dark);
+    margin-bottom: 48px;
+  }
+
+  /* EMPATHY */
+  .empathy-bg { background: var(--white); }
+
+  .check-list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .check-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+    background: var(--cream);
+    border-radius: 12px;
+    padding: 18px 20px;
+    border-left: 4px solid var(--orange);
+  }
+
+  .check-icon {
+    width: 24px;
+    height: 24px;
+    background: var(--orange);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    color: #fff;
+    font-size: 13px;
+    margin-top: 1px;
+  }
+
+  .check-text {
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 1.6;
+    color: var(--text);
+  }
+
+  /* PROBLEM */
+  .problem-bg {
+    background: linear-gradient(135deg, var(--beige) 0%, var(--warm-beige) 100%);
+  }
+
+  .problem-quote {
+    font-family: 'Noto Serif JP', serif;
+    font-size: clamp(16px, 4vw, 22px);
+    font-weight: 700;
+    text-align: center;
+    color: var(--text-light);
+    line-height: 1.9;
+    margin-bottom: 32px;
+  }
+
+  .problem-answer {
+    font-family: 'Noto Serif JP', serif;
+    font-size: clamp(20px, 5vw, 30px);
+    font-weight: 900;
+    text-align: center;
+    color: var(--dark);
+    line-height: 1.7;
+    background: var(--white);
+    border-radius: 16px;
+    padding: 28px 24px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.06);
+  }
+
+  .problem-answer em {
+    color: var(--orange);
+    font-style: normal;
+  }
+
+  /* BENEFIT */
+  .benefit-bg { background: var(--white); }
+
+  .benefit-list {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    margin-bottom: 32px;
+  }
+
+  .benefit-item {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 16px 20px;
+    border-radius: 12px;
+    background: var(--orange-pale);
+  }
+
+  .benefit-num {
+    font-family: 'Noto Serif JP', serif;
+    font-size: 22px;
+    font-weight: 900;
+    color: var(--orange);
+    min-width: 36px;
+  }
+
+  .benefit-text {
+    font-size: 15px;
+    font-weight: 700;
+    color: var(--dark);
+  }
+
+  .benefit-strong {
+    text-align: center;
+    font-family: 'Noto Serif JP', serif;
+    font-size: 17px;
+    font-weight: 900;
+    color: var(--red);
+    background: var(--cream);
+    border-radius: 12px;
+    padding: 18px 24px;
+    border: 2px solid var(--orange-light);
+  }
+
+  /* MICHISHIRUBE */
+  .michi-bg {
+    background: linear-gradient(135deg, #2c1a0e 0%, #5a2e0c 100%);
+  }
+
+  .michi-bg .section-label { color: var(--gold); }
+  .michi-bg .section-title { color: #fff; }
+
+  .michi-steps {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .michi-step {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background: rgba(255,255,255,0.08);
+    border-radius: 16px;
+    padding: 20px 24px;
+    border: 1px solid rgba(232,118,42,0.3);
+    backdrop-filter: blur(4px);
+  }
+
+  .michi-kana {
+    font-family: 'Noto Serif JP', serif;
+    font-size: 40px;
+    font-weight: 900;
+    color: var(--orange-light);
+    min-width: 50px;
+    text-align: center;
+  }
+
+  .michi-content {}
+
+  .michi-label {
+    font-size: 11px;
+    color: rgba(255,255,255,0.5);
+    letter-spacing: 0.1em;
+    margin-bottom: 2px;
+  }
+
+  .michi-desc {
+    font-family: 'Noto Serif JP', serif;
+    font-size: 20px;
+    font-weight: 700;
+    color: #fff;
+  }
+
+  /* SCHEDULE */
+  .schedule-bg {
+    background: var(--cream);
+  }
+
+  .schedule-parts {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .schedule-part {
+    background: var(--white);
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+  }
+
+  .schedule-part-header {
+    background: var(--brown);
+    color: #fff;
+    padding: 14px 24px;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+  }
+
+  .schedule-part-num {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.2em;
+    opacity: 0.7;
+  }
+
+  .schedule-part-title {
+    font-family: 'Noto Serif JP', serif;
+    font-size: 17px;
+    font-weight: 700;
+  }
+
+  .schedule-part-time {
+    margin-left: auto;
+    font-size: 13px;
+    opacity: 0.8;
+  }
+
+  .schedule-items {
+    padding: 20px 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+  }
+
+  .schedule-item {
+    display: flex;
+    gap: 12px;
+    font-size: 14px;
+    color: var(--text);
+    line-height: 1.6;
+  }
+
+  .schedule-dot {
+    width: 8px;
+    height: 8px;
+    background: var(--orange);
+    border-radius: 50%;
+    margin-top: 8px;
+    flex-shrink: 0;
+  }
+
+  /* SPEAKERS */
+  .speakers-bg { background: var(--white); }
+
+  .speakers-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+  }
+
+  .speaker-card {
+    background: var(--cream);
+    border-radius: 16px;
+    padding: 20px 16px;
+    text-align: center;
+    border: 1px solid var(--warm-beige);
+    position: relative;
+    overflow: hidden;
+  }
+
+  .speaker-card.featured {
+    grid-column: 1 / -1;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    text-align: left;
+    background: linear-gradient(135deg, var(--orange-pale), var(--beige));
+    border-color: var(--orange-light);
+  }
+
+  .speaker-avatar {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    background: var(--warm-beige);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Noto Serif JP', serif;
+    font-size: 22px;
+    font-weight: 900;
+    color: var(--brown);
+    flex-shrink: 0;
+    border: 3px solid var(--orange-light);
+  }
+
+  .speaker-card.featured .speaker-avatar {
+    width: 80px;
+    height: 80px;
+    font-size: 26px;
+    border-color: var(--orange);
+  }
+
+  .speaker-badge {
+    display: inline-block;
+    background: var(--orange);
+    color: #fff;
+    font-size: 10px;
+    font-weight: 700;
+    padding: 3px 10px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    letter-spacing: 0.1em;
+  }
+
+  .speaker-name {
+    font-family: 'Noto Serif JP', serif;
+    font-size: 16px;
+    font-weight: 900;
+    color: var(--dark);
+    margin-bottom: 4px;
+  }
+
+  .speaker-role {
+    font-size: 12px;
+    color: var(--orange);
+    font-weight: 700;
+    margin-bottom: 6px;
+  }
+
+  .speaker-desc {
+    font-size: 12px;
+    color: var(--text-light);
+    line-height: 1.6;
+  }
+
+  /* BENEFITS/TOKUTEN */
+  .tokuten-bg {
+    background: linear-gradient(135deg, var(--orange) 0%, #e05010 100%);
+  }
+
+  .tokuten-bg .section-label { color: rgba(255,255,255,0.7); }
+  .tokuten-bg .section-title { color: #fff; }
+
+  .tokuten-list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .tokuten-item {
+    background: rgba(255,255,255,0.15);
+    border-radius: 14px;
+    padding: 20px;
+    display: flex;
+    gap: 14px;
+    align-items: flex-start;
+    backdrop-filter: blur(4px);
+    border: 1px solid rgba(255,255,255,0.25);
+  }
+
+  .tokuten-icon {
+    font-size: 28px;
+    flex-shrink: 0;
+  }
+
+  .tokuten-content {}
+  .tokuten-title {
+    font-weight: 700;
+    color: #fff;
+    font-size: 15px;
+    margin-bottom: 4px;
+  }
+  .tokuten-sub {
+    font-size: 13px;
+    color: rgba(255,255,255,0.8);
+  }
+
+  /* EVENT INFO */
+  .info-bg { background: var(--cream); }
+
+  .info-card {
+    background: var(--white);
+    border-radius: 20px;
+    padding: 32px 24px;
+    box-shadow: 0 8px 40px rgba(0,0,0,0.08);
+  }
+
+  .info-row {
+    display: flex;
+    gap: 16px;
+    padding: 16px 0;
+    border-bottom: 1px solid var(--beige);
+    align-items: flex-start;
+  }
+
+  .info-row:last-child { border-bottom: none; }
+
+  .info-key {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.15em;
+    color: var(--orange);
+    min-width: 70px;
+    padding-top: 2px;
+  }
+
+  .info-val {
+    font-family: 'Noto Serif JP', serif;
+    font-size: 15px;
+    font-weight: 700;
+    color: var(--dark);
+    line-height: 1.7;
+  }
+
+  .info-val .big {
+    font-size: 24px;
+    display: block;
+  }
+
+  .info-val .price-box {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+
+  .price-tag {
+    background: var(--orange-pale);
+    border-radius: 8px;
+    padding: 8px 16px;
+    text-align: center;
+  }
+
+  .price-label { font-size: 11px; color: var(--text-light); }
+  .price-num { font-size: 22px; color: var(--orange); font-weight: 900; }
+
+  /* FINAL CTA */
+  .final-cta {
+    background: linear-gradient(160deg, #2c1a0e 0%, #5a2e0c 60%, var(--brown) 100%);
+    padding: 80px 24px;
+    text-align: center;
+  }
+
+  .final-cta-title {
+    font-family: 'Noto Serif JP', serif;
+    font-size: clamp(20px, 5vw, 32px);
+    font-weight: 900;
+    color: #fff;
+    margin-bottom: 12px;
+    line-height: 1.6;
+  }
+
+  .final-cta-sub {
+    font-size: 14px;
+    color: rgba(255,255,255,0.7);
+    margin-bottom: 40px;
+    line-height: 1.9;
+  }
+
+  .cta-big {
+    display: inline-block;
+    background: linear-gradient(135deg, var(--red), #8b0000);
+    color: #fff;
+    font-size: 20px;
+    font-weight: 700;
+    padding: 22px 56px;
+    border-radius: 60px;
+    text-decoration: none;
+    letter-spacing: 0.05em;
+    box-shadow: 0 12px 40px rgba(192,57,43,0.6);
+    transition: transform 0.2s, box-shadow 0.2s;
+    border: 2px solid rgba(255,255,255,0.2);
+  }
+
+  .cta-big:hover { transform: translateY(-4px); box-shadow: 0 18px 50px rgba(192,57,43,0.7); }
+
+  .final-notes {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    margin-top: 24px;
+    flex-wrap: wrap;
+  }
+
+  .final-note {
+    font-size: 13px;
+    color: rgba(255,255,255,0.7);
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+
+  /* DIVIDER */
+  .divider {
+    height: 4px;
+    background: linear-gradient(90deg, var(--orange), var(--gold), var(--orange));
+  }
+
+  /* ANIMATIONS */
+  @keyframes fadeDown {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  .reveal {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.7s ease, transform 0.7s ease;
+  }
+
+  .reveal.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  /* STICKY CTA */
+  .sticky-cta {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: var(--red);
+    padding: 14px 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    z-index: 100;
+    box-shadow: 0 -4px 24px rgba(0,0,0,0.2);
+    transform: translateY(100%);
+    transition: transform 0.4s ease;
+  }
+
+  .sticky-cta.show { transform: translateY(0); }
+
+  .sticky-cta a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 15px;
+    letter-spacing: 0.05em;
+  }
+
+  .sticky-cta span {
+    font-size: 12px;
+    color: rgba(255,255,255,0.8);
+  }
+
+  /* ORGANIZER */
+  .organizer {
+    background: var(--dark);
+    padding: 24px;
+    text-align: center;
+    font-size: 12px;
+    color: rgba(255,255,255,0.5);
+    line-height: 2;
+  }
+</style>
+</head>
+<body>
+
+<!-- STICKY CTA -->
+<div class="sticky-cta" id="stickyCta">
+  <span>600名限定・満席次第終了</span>
+  <a href="#">今すぐ席を確保する →</a>
+</div>
+
+<!-- ===== FIRST VIEW ===== -->
+<section class="fv">
+  <div class="fv-badge">初開催 ｜ 600名が涙と笑いで繋がる1日</div>
+  <h1 class="fv-catch">
+    「自分を後回しにする人生」で<br>
+    <span>このまま終わりますか？</span>
+  </h1>
+  <p class="fv-sub">
+    家族のために頑張ってきたあなたへ。<br>
+    今度は、自分の人生を取り戻す1日。<br>
+    子育て・不登校・夫婦関係・親との関係。<br>
+    "別の未来"へ変える体験型講演会。
+  </p>
+  <div class="fv-event-title">家族の幸せ応援トークライブ</div>
+  <div class="fv-date">2026.11.28（土）</div>
+  <div class="fv-venue">13:30 OPEN ／ 14:30 START ／ ～20:30 END<br>札幌共済ホール（北海道札幌市中央区北4条西1丁目1）</div>
+  <a href="#" class="cta-btn">今すぐ席を確保する</a>
+  <p class="cta-note">※ 600名限定・満席次第終了</p>
+
+  <svg class="fv-wave" viewBox="0 0 1440 60" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M0,30 C360,60 1080,0 1440,30 L1440,60 L0,60 Z" fill="#fdf8f2"/>
+  </svg>
+</section>
+
+<!-- ===== EMPATHY ===== -->
+<section class="section empathy-bg">
+  <div class="section-inner">
+    <div class="section-label reveal">こんなお悩みありませんか？</div>
+    <h2 class="section-title reveal">子育てや家族の悩みを、<br>ひとりで抱えていませんか？</h2>
+    <div class="check-list">
+      <div class="check-item reveal"><span class="check-icon">✓</span><span class="check-text">子どものことで心が休まらない</span></div>
+      <div class="check-item reveal"><span class="check-icon">✓</span><span class="check-text">家族のために頑張っているのに、なぜか満たされない</span></div>
+      <div class="check-item reveal"><span class="check-icon">✓</span><span class="check-text">夫婦関係にモヤモヤしている</span></div>
+      <div class="check-item reveal"><span class="check-icon">✓</span><span class="check-text">親からの過干渉に苦しさを感じている</span></div>
+      <div class="check-item reveal"><span class="check-icon">✓</span><span class="check-text">自分の夢や人生を後回しにしてきた</span></div>
+      <div class="check-item reveal"><span class="check-icon">✓</span><span class="check-text">このままでいいのか、不安になる</span></div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ===== PROBLEM ===== -->
+<section class="section problem-bg">
+  <div class="section-inner">
+    <div class="problem-quote reveal">
+      子どもを変えようとすると、家庭は苦しくなる。<br>
+      でも——
+    </div>
+    <div class="problem-answer reveal">
+      <em>大人が輝くと</em><br>
+      家庭も、教育も、社会も変わる。<br><br>
+      その<em>「はじまり」</em>を体験する1日です。
+    </div>
+  </div>
+</section>
+
+<!-- ===== BENEFIT ===== -->
+<section class="section benefit-bg">
+  <div class="section-inner">
+    <div class="section-label reveal">このイベントで得られること</div>
+    <h2 class="section-title reveal">参加すると、こう変わる</h2>
+    <div class="benefit-list">
+      <div class="benefit-item reveal"><span class="benefit-num">01</span><span class="benefit-text">家族との関係が楽になる</span></div>
+      <div class="benefit-item reveal"><span class="benefit-num">02</span><span class="benefit-text">自分を満たす感覚がわかる</span></div>
+      <div class="benefit-item reveal"><span class="benefit-num">03</span><span class="benefit-text">人生の方向性が見える</span></div>
+      <div class="benefit-item reveal"><span class="benefit-num">04</span><span class="benefit-text">不登校や子育てを違う視点で見られる</span></div>
+      <div class="benefit-item reveal"><span class="benefit-num">05</span><span class="benefit-text">一歩踏み出す勇気が持てる</span></div>
+    </div>
+    <div class="benefit-strong reveal">「どうすればいいか分からない」から<br>抜け出せます。</div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ===== MICHISHIRUBE ===== -->
+<section class="section michi-bg">
+  <div class="section-inner">
+    <div class="section-label reveal">悩みを解決する5つのステップ</div>
+    <h2 class="section-title reveal">「みちしるべ」を体験</h2>
+    <div class="michi-steps">
+      <div class="michi-step reveal">
+        <div class="michi-kana">み</div>
+        <div class="michi-content">
+          <div class="michi-label">STEP 1</div>
+          <div class="michi-desc">認める</div>
+        </div>
+      </div>
+      <div class="michi-step reveal">
+        <div class="michi-kana">ち</div>
+        <div class="michi-content">
+          <div class="michi-label">STEP 2</div>
+          <div class="michi-desc">違いを尊重する</div>
+        </div>
+      </div>
+      <div class="michi-step reveal">
+        <div class="michi-kana">し</div>
+        <div class="michi-content">
+          <div class="michi-label">STEP 3</div>
+          <div class="michi-desc">信じる</div>
+        </div>
+      </div>
+      <div class="michi-step reveal">
+        <div class="michi-kana">る</div>
+        <div class="michi-content">
+          <div class="michi-label">STEP 4</div>
+          <div class="michi-desc">緩める</div>
+        </div>
+      </div>
+      <div class="michi-step reveal">
+        <div class="michi-kana">べ</div>
+        <div class="michi-content">
+          <div class="michi-label">STEP 5</div>
+          <div class="michi-desc">別の未来も選択できる</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== SCHEDULE ===== -->
+<section class="section schedule-bg">
+  <div class="section-inner">
+    <div class="section-label reveal">当日の流れ</div>
+    <h2 class="section-title reveal">聞くだけじゃない<br>体験型イベント</h2>
+    <div class="schedule-parts">
+      <div class="schedule-part reveal">
+        <div class="schedule-part-header">
+          <span class="schedule-part-num">PART 01</span>
+          <span class="schedule-part-title">家族と教育の未来トーク</span>
+          <span class="schedule-part-time">14:30〜</span>
+        </div>
+        <div class="schedule-items">
+          <div class="schedule-item"><span class="schedule-dot"></span><div>「不登校に必要な関わりと環境」<br><small style="color:var(--text-light)">対談：小学校教員 × 西森菜月</small></div></div>
+          <div class="schedule-item"><span class="schedule-dot"></span><div>「自分を満たせば家族にパワーが循環する！」<br><small style="color:var(--text-light)">講師：西森菜月</small></div></div>
+        </div>
+      </div>
+      <div class="schedule-part reveal">
+        <div class="schedule-part-header">
+          <span class="schedule-part-num">PART 02</span>
+          <span class="schedule-part-title">大人が夢を叶えるみちしるべ</span>
+          <span class="schedule-part-time">17:30〜</span>
+        </div>
+        <div class="schedule-items">
+          <div class="schedule-item"><span class="schedule-dot"></span><div>「大人が夢を叶える入り口」<br><small style="color:var(--text-light)">講師：八木悠磨 / 登壇：石飛卓也・山田圭介・絵本作家たいよう 他</small></div></div>
+          <div class="schedule-item"><span class="schedule-dot"></span><div>贈る言葉<br><small style="color:var(--text-light)">20:00〜20:30 ／ 講師：西森菜月</small></div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== SPEAKERS ===== -->
+<section class="section speakers-bg">
+  <div class="section-inner">
+    <div class="section-label reveal">教育・子育て・自己実現の</div>
+    <h2 class="section-title reveal">プロフェッショナルが集結<br><small style="font-size:0.6em;color:var(--text-light)">累計 1万7千人 の人生を好転させてきた</small></h2>
+    <div class="speakers-grid">
+      <!-- Featured -->
+      <div class="speaker-card featured reveal">
+        <div class="speaker-avatar">菜</div>
+        <div>
+          <div class="speaker-badge">メインスピーカー</div>
+          <div class="speaker-name">西森 菜月</div>
+          <div class="speaker-role">家族・子育て・不登校</div>
+          <div class="speaker-desc">「みちしるべ」提唱者。親子コミュニティ：チャチャチャワールド代表。札幌・旭川で大規模フェスを主催。幼稚園・高校での講座開催等、地域活性化と自己実現を牽引。</div>
+        </div>
+      </div>
+      <!-- Others -->
+      <div class="speaker-card reveal">
+        <div class="speaker-avatar">磨</div>
+        <div class="speaker-name">八木 悠磨</div>
+        <div class="speaker-role">自己実現・夢</div>
+        <div class="speaker-desc">大人が夢を叶える入口を提唱するスピーカー</div>
+      </div>
+      <div class="speaker-card reveal">
+        <div class="speaker-avatar">卓</div>
+        <div class="speaker-name">石飛 卓也</div>
+        <div class="speaker-role">人生設計・ビジネス</div>
+        <div class="speaker-desc">合同会社シカケビト代表</div>
+      </div>
+      <div class="speaker-card reveal">
+        <div class="speaker-avatar">圭</div>
+        <div class="speaker-name">山田 圭介</div>
+        <div class="speaker-role">コミュニティ・人間関係</div>
+        <div class="speaker-desc">コミュニティ主催者</div>
+      </div>
+      <div class="speaker-card reveal">
+        <div class="speaker-avatar">優</div>
+        <div class="speaker-name">鈴木 優</div>
+        <div class="speaker-role">営業・人生スキル</div>
+        <div class="speaker-desc">一般社団法人 日本営業実践スキル協会 代表理事</div>
+      </div>
+      <div class="speaker-card reveal">
+        <div class="speaker-avatar">K</div>
+        <div class="speaker-name">Kyoko</div>
+        <div class="speaker-role">身体・姿勢・健康</div>
+        <div class="speaker-desc">美姿勢を叶えるエレガントボディ講師</div>
+      </div>
+      <div class="speaker-card reveal">
+        <div class="speaker-avatar">陽</div>
+        <div class="speaker-name">絵本作家 たいよう</div>
+        <div class="speaker-role">心・感性・子ども</div>
+        <div class="speaker-desc">絵本コーナー担当</div>
+      </div>
+      <div class="speaker-card reveal">
+        <div class="speaker-avatar">虎</div>
+        <div class="speaker-name">とらぎつね</div>
+        <div class="speaker-role">お金・現実</div>
+        <div class="speaker-desc">黒帯ファイナンシャルプランナー</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ===== TOKUTEN ===== -->
+<section class="section tokuten-bg">
+  <div class="section-inner">
+    <div class="section-label reveal">参加者3大特典</div>
+    <h2 class="section-title reveal">聞いて終わりにしない。<br>今日の気づきを、明日の一歩へ。</h2>
+    <div class="tokuten-list">
+      <div class="tokuten-item reveal">
+        <div class="tokuten-icon">📚</div>
+        <div class="tokuten-content">
+          <div class="tokuten-title">絵本作家たいようさんの絵本コーナー</div>
+          <div class="tokuten-sub">心と感性を育てる特別なコーナー</div>
+        </div>
+      </div>
+      <div class="tokuten-item reveal">
+        <div class="tokuten-icon">🧘</div>
+        <div class="tokuten-content">
+          <div class="tokuten-title">美姿勢を叶えるエレガントボディ講師Kyokoによる美姿勢呼吸法</div>
+          <div class="tokuten-sub">体から整える実践体験</div>
+        </div>
+      </div>
+      <div class="tokuten-item reveal">
+        <div class="tokuten-icon">🎁</div>
+        <div class="tokuten-content">
+          <div class="tokuten-title">お得な割引券詰め合わせ</div>
+          <div class="tokuten-sub">各登壇者からの特別プレゼント</div>
+        </div>
+      </div>
+    </div>
+    <div style="text-align:center;margin-top:36px">
+      <a href="#" class="cta-btn" style="background:var(--dark);box-shadow:0 8px 30px rgba(0,0,0,0.4)">今すぐ席を確保する</a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== EVENT INFO ===== -->
+<section class="section info-bg">
+  <div class="section-inner">
+    <div class="section-label reveal">イベント情報</div>
+    <h2 class="section-title reveal">開催概要</h2>
+    <div class="info-card reveal">
+      <div class="info-row">
+        <div class="info-key">日時</div>
+        <div class="info-val">
+          <span class="big">2026年11月28日（土）</span>
+          13:30 OPEN ／ 14:30 START ／ ～20:30 END
+        </div>
+      </div>
+      <div class="info-row">
+        <div class="info-key">会場</div>
+        <div class="info-val">
+          札幌共済ホール<br>
+          <small style="font-size:13px;color:var(--text-light)">〒060-0004 北海道札幌市中央区北4条西1丁目1</small>
+        </div>
+      </div>
+      <div class="info-row">
+        <div class="info-key">参加費</div>
+        <div class="info-val">
+          <div class="price-box">
+            <div class="price-tag">
+              <div class="price-label">前売券</div>
+              <div class="price-num">¥2,000</div>
+            </div>
+            <div class="price-tag">
+              <div class="price-label">当日券</div>
+              <div class="price-num">¥3,000</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="info-row">
+        <div class="info-key">定員</div>
+        <div class="info-val">600名（満席になり次第終了）</div>
+      </div>
+      <div class="info-row">
+        <div class="info-key">備考</div>
+        <div class="info-val">✅ 託児あり（問合せフォームよりお申込み）<br>✅ お一人様大歓迎</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FINAL CTA ===== -->
+<section class="final-cta">
+  <h2 class="final-cta-title reveal">
+    お母さんが輝けば、<br>家族はもっと自由になる。
+  </h2>
+  <p class="final-cta-sub reveal">
+    「自分を後回しにしてきた」あなたへ。<br>
+    この1日が、あなたの人生のみちしるべになります。
+  </p>
+  <a href="#" class="cta-big reveal">今すぐ席を確保する</a>
+  <div class="final-notes reveal">
+    <span class="final-note">🎫 600名限定</span>
+    <span class="final-note">👶 託児あり</span>
+    <span class="final-note">🙋 お一人様OK</span>
+    <span class="final-note">⏰ 満席次第終了</span>
+  </div>
+</section>
+
+<div class="organizer">
+  主催・企画：一般社団法人カジュアルコーチング<br>
+  協賛：合同会社シカケビト　後援：札幌市教育委員会
+</div>
+
+<script>
+// Scroll reveal
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(e => {
+    if (e.isIntersecting) {
+      e.target.classList.add('visible');
+    }
+  });
+}, { threshold: 0.12 });
+
+document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+// Sticky CTA
+const stickyCta = document.getElementById('stickyCta');
+window.addEventListener('scroll', () => {
+  if (window.scrollY > 400) stickyCta.classList.add('show');
+  else stickyCta.classList.remove('show');
+});
+</script>
+</body>
+</html>
